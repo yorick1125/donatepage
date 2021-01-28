@@ -1,0 +1,222 @@
+.App {
+  text-align: center;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.nameInput {
+  width: 280px;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gallery {
+  height: 400px;
+}
+
+.nav-title {
+  text-shadow: 1px 1px black;
+  margin-right: 40px;
+}
+
+.nav-right {
+  display: flex;
+}
+
+
+.donatebtn {
+  margin: 20px;
+}
+
+.contributors {
+  margin: 30px;
+}
+
+.contributorbtn {
+  margin: 10px;
+}
+
+.social-logos {
+  margin-top: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.nameform {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.donate {
+  color: white;
+  background-color: rgb(127, 0, 0);
+  border: 2px solid black;
+}
+
+.link {
+  padding: 10px;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+}
+
+.donateTxt {
+  text-shadow: 1px 1px black;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.paypalbtn {
+  text-align: center;
+  justify-content: center;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.navbar {
+  color: white ;
+  background-color: rgb(127, 0, 0);
+}
+
+.navbar-brand {
+  color:white;
+}
+
+.mslogo {
+  height: 50px;
+}
+
+.gallery {
+  border: 2px solid black;
+  background-color: rgb(127, 0, 0);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+nav {
+  color: white;
+}
+
+.about {
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+.aboutTxt {
+  margin: 30px;
+}
+
+.moneyinput {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ngosourceimg {
+  height: 100px;
+  width: 250px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.navbar-copyright {
+  display: none;
+}
+
+.helpbtn {
+  width: 50%;
+  background-color: rgb(100, 160, 256 );
+}
+
+.footer {
+  padding: 10px;
+  width: 100%;
+  color: white;
+  background-color: rgb(127, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@media screen and (max-width: 726px) {
+  .mslogo {
+    display: none;
+  }
+
+  .about {
+    width: 100%;
+    left: 75%;
+    transform: translateX(-3%);
+  }
+  .nameform {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .navbar-copyright {
+    display: inline
+  }
+
+}
+
+@media screen and (max-width: 1090px) {
+  .mslogo {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  .navbar-copyright {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
