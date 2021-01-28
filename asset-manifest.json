@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/donatepage/static/css/main.c563b32a.chunk.css",
+    "main.js": "/donatepage/static/js/main.ad8206f2.chunk.js",
+    "main.js.map": "/donatepage/static/js/main.ad8206f2.chunk.js.map",
+    "runtime-main.js": "/donatepage/static/js/runtime-main.fe47577b.js",
+    "runtime-main.js.map": "/donatepage/static/js/runtime-main.fe47577b.js.map",
+    "static/css/2.150d169a.chunk.css": "/donatepage/static/css/2.150d169a.chunk.css",
+    "static/js/2.17afc8c5.chunk.js": "/donatepage/static/js/2.17afc8c5.chunk.js",
+    "static/js/2.17afc8c5.chunk.js.map": "/donatepage/static/js/2.17afc8c5.chunk.js.map",
+    "index.html": "/donatepage/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/donatepage/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.c563b32a.chunk.css.map": "/donatepage/static/css/main.c563b32a.chunk.css.map",
+    "static/js/2.17afc8c5.chunk.js.LICENSE.txt": "/donatepage/static/js/2.17afc8c5.chunk.js.LICENSE.txt",
+    "static/media/behindbars.5f5b40d0.png": "/donatepage/static/media/behindbars.5f5b40d0.png",
+    "static/media/classroom.104e1ab3.jpg": "/donatepage/static/media/classroom.104e1ab3.jpg",
+    "static/media/maggy&child.87cb2e0c.png": "/donatepage/static/media/maggy&child.87cb2e0c.png",
+    "static/media/maisonshalomlogo.f4d870e5.png": "/donatepage/static/media/maisonshalomlogo.f4d870e5.png",
+    "static/media/primarykids.e8127210.jpg": "/donatepage/static/media/primarykids.e8127210.jpg",
+    "static/media/schoolgirl.5c8eab77.jpg": "/donatepage/static/media/schoolgirl.5c8eab77.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe47577b.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.17afc8c5.chunk.js",
+    "static/css/main.c563b32a.chunk.css",
+    "static/js/main.ad8206f2.chunk.js"
+  ]
+}
