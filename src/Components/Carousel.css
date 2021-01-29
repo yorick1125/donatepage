@@ -1,0 +1,16 @@
+.carousel {
+    height: 400px;
+}
+
+.carouselimg {
+    height: 395px;
+}
+
+@media screen and (max-width: 376px) {
+    .carousel {
+        height: 300px;
+    }
+    .carouselimg {
+        height: 300px;
+    }
+}

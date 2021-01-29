@@ -1,0 +1,18 @@
+#donationamount {
+     width: 345px; 
+     background-color: white;
+}
+
+.donate-input {
+    width: 100%;
+}
+
+.input {
+    /* width: 60%; */
+}
+
+@media screen and (max-width: 376px) { 
+    #donationamount {
+        width: 100px;
+    }
+}
