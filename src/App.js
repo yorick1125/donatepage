@@ -37,7 +37,6 @@ function App() {
             
           </ReactBootStrap.Nav>
 
-          <ReactBootStrap.Nav>
             <div className="nav-right" >
               <a className="link" style={{marginTop: "5px"}} >EN</a>
               <a className="link" style={{marginTop: "5px"}} >FR</a>
@@ -45,7 +44,6 @@ function App() {
               <ReactBootStrap.Nav.Link href="https://twitter.com/maison_shalom" ><img className="social-logos" src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="twitterlogo" /></ReactBootStrap.Nav.Link>
               <a href="https://www.maisonshalom.org/" ><img className="mslogo" src={maisonshalomlogo} alt="maison shalom logo" /></a>
             </div>
-        </ReactBootStrap.Nav>
           
           {/* <ReactBootStrap.Form inline>
             <ReactBootStrap.FormControl type="text" placeholder="Search" className="mr-sm-2"/>
@@ -58,10 +56,10 @@ function App() {
 
       </ReactBootStrap.Navbar>
 
-
       <div className="gallery" >
         <Carousel/>
       </div>
+
 
       <div className="about" id="about">
         <h2>About</h2>
@@ -79,6 +77,8 @@ Please help us reach the 1 Million dollars goal to secure funding to build a sch
 Rwanda. Together we can make a difference!</p>
       </div>
 
+
+        
       <div className="donate" id="donate">
           <h2 style={{textShadow: "1px 1px black"}} >Donate</h2>
 

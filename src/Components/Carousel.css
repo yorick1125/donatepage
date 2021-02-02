@@ -4,6 +4,7 @@
 
 .carouselimg {
     height: 395px;
+    border: 4px ridge white;
 }
 
 @media screen and (max-width: 376px) {

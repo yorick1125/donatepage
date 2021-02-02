@@ -4,8 +4,7 @@ import './Carousel.css';
 import Img1 from '../assets/images/primarykids.jpg'
 import Img2 from '../assets/images/maggy&child.png'
 import Img3 from '../assets/images/schoolgirl.jpg'
-import Img4 from '../assets/images/behindbars.png'
-import Img5 from '../assets/images/classroom.jpg'
+import Img4 from '../assets/images/classroom.jpg'
 
 function App() {
     return (
@@ -27,11 +26,6 @@ function App() {
                 <Carousel.Item>
                     <img className="carouselimg" src={Img4} alt="img4"/>  
                 </Carousel.Item>
-
-                <Carousel.Item>
-                    <img className="carouselimg" src={Img5} alt="img5"/>  
-                </Carousel.Item>
-
 
             </Carousel>
         </div>
