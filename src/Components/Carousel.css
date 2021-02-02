@@ -1,17 +1,21 @@
 .carousel {
     height: 400px;
+    width: 650px;
+    margin: auto;
 }
 
 .carouselimg {
     height: 395px;
-    border: 4px ridge white;
+    width: 650px;
 }
 
 @media screen and (max-width: 376px) {
     .carousel {
         height: 300px;
+        width: inherit;
     }
     .carouselimg {
         height: 300px;
+        width: inherit;
     }
 }
