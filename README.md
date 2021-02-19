@@ -1,6 +1,6 @@
 # Maison Shalom Donate Page 
 
-## Features To Do:
+## Features To Do
 
 ### Styling:
 -Change text fonts -> Search up interesting web fonts on google
@@ -32,4 +32,4 @@
 -make it required before adding donations
 
 
-## Bugs to fix:
+## Bugs to fix
