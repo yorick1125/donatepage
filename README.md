@@ -3,8 +3,8 @@
 ## Features To Do
 
   ### Styling:
-  -Change text fonts -> Search up interesting web fonts on google
-  -Make the text wrapping square
+  Change text fonts -> Search up interesting web fonts on google
+  Make the text wrapping square
   -Add padding to the progress bar
   -Make Progress bar it look a bit cooler
 
