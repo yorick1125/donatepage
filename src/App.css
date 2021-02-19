@@ -45,7 +45,12 @@ html {
   width: 30px;
 }
 
-.nameform {
+.progress {
+  margin: 20px;
+}
+
+.slider {
+  width: 600px;
 }
 
 .donate {
@@ -125,6 +130,13 @@ nav {
 
 .aboutTxt {
   margin: 30px;
+  font-family: Candara;
+  font-size: 30px;
+}
+
+.progress-div {
+  background-color: rgb(127, 0, 0);
+  border-top: 2.5px ridge white;
 }
 
 .moneyinput {

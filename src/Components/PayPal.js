@@ -1,11 +1,13 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import MoneyInput from './MoneyInput';
 
 export default function PayPal() {
 
     const paypal = useRef();
+    let [success, setSucess] = useState(false);
     const amount = document.getElementById("donationamount").value
     console.log(amount);
+
 
     useEffect(() => {
         window.paypal.Buttons({
@@ -26,7 +28,13 @@ export default function PayPal() {
             },
             onApprove: async (data, actions) => {
                 const order = await actions.order.capture()
+                success = true;
                 console.log("Succesful order: " + order);
+                return(
+                    <div>
+                        <h1>Succesful order</h1>
+                    </div>
+                )
 
             },
             onError: (err) => {
@@ -38,7 +46,14 @@ export default function PayPal() {
 
     return (
         <div>
-            <div ref={paypal}></div>
+            {success ? (
+                <div className="Sucess" >
+                    <h1>Succesful order</h1>
+                </div>
+            ) : (
+                <div ref={paypal}></div>
+            )}
         </div>
+
     )
 }

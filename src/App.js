@@ -9,7 +9,9 @@ import DonateChoice from './Components/DonateChoice.js';
 
 function App() {
 
-  const [donate, setDonate] = useState(false)
+  const [donate, setDonate] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [english, setEnglish] = useState(true);
 
   return (
 
@@ -18,7 +20,7 @@ function App() {
     <div className="App">
       
       <ReactBootStrap.Navbar className="navbar" expand="lg">
-        <h4 className="nav-title" >Oasis of Peace</h4>
+        <h4 className="nav-title" >Oasis of Peace School</h4>
         <ReactBootStrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
 
 
@@ -38,8 +40,12 @@ function App() {
           </ReactBootStrap.Nav>
 
             <div className="nav-right" >
-              <a className="link" style={{marginTop: "5px"}} >EN</a>
-              <a className="link" style={{marginTop: "5px"}} >FR</a>
+              <a className="link" style={{marginTop: "5px"}} onClick={ () => {
+                setEnglish(true); 
+              }} >EN</a>
+              <a className="link" style={{marginTop: "5px"}} onClick={ () => {
+                setEnglish(false); 
+              }} >FR</a>
               <ReactBootStrap.Nav.Link href="https://www.facebook.com/MaisonShalom/" ><img className="social-logos" src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19750.png" alt="facebooklogo" /></ReactBootStrap.Nav.Link>
               <ReactBootStrap.Nav.Link href="https://twitter.com/maison_shalom" ><img className="social-logos" src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" alt="twitterlogo" /></ReactBootStrap.Nav.Link>
               <a href="https://www.maisonshalom.org/" ><img className="mslogo" src={maisonshalomlogo} alt="maison shalom logo" /></a>
@@ -56,30 +62,48 @@ function App() {
 
       </ReactBootStrap.Navbar>
 
+      <div className="progress-div">
+          <h2 style={{color: "green"}} >${progress} out of $1 000 000</h2>
+          <input className="slider"  type="range" min="1" max="1000" value= {progress} ></input>
+      </div>
+
       <div className="gallery" >
         <Carousel/>
       </div>
 
-
-      <div className="about" id="about">
+      {english ? (
+        <div className="about" id="about">
         <h2>About</h2>
         <p className="aboutTxt" >If you are able to read this, you have been blessed with an education. We are currently
-raising money to build a school for Burundian refugees in Rwanda.
-We all have a duty to do what we can to make sure we can share this blessing with
-those in need. Help us spread this gift by donating 1$ or more, and please share this
-page/video.
+  raising money to build a school for Burundian refugees in Rwanda.
+  We all have a duty to do what we can to make sure we can share this blessing with
+  those in need. Help us spread this gift by donating 1$ or more, and please share this
+  page/video.
 
-During the 2015 crisis in Burundi, Marguerite Barankitse, founder &amp; president of Maison
-Shalom denounced the massacres and crimes committed against humanity by its own
-government. This resulted in the closure of its schools, hospital, bank accounts and the
-closure of all activities in Burundi. They have now relocated in Rwanda since 2015.
-Please help us reach the 1 Million dollars goal to secure funding to build a school in
-Rwanda. Together we can make a difference!</p>
+  During the 2015 crisis in Burundi, Marguerite Barankitse, founder &amp; president of Maison
+  Shalom denounced the massacres and crimes committed against humanity by its own
+  government. This resulted in the closure of its schools, hospital, bank accounts and the
+  closure of all activities in Burundi. They have now relocated in Rwanda since 2015.
+  Please help us reach the 1 Million dollars goal to secure funding to build a school in
+  Rwanda. Together we can make a difference!</p>
       </div>
+          ) : (
+            <div className="about" id="about">
+            <h2>About</h2>
+              <p className="aboutTxt"   >Si vous êtes capable de lire ceci, vous avez été béni avec une éducation. Nous collectons actuellement des fonds pour construire une école pour les réfugiés burundais au Rwanda. Nous avons tous le devoir de faire ce que nous pouvons pour nous assurer que nous pouvons partager cette bénédiction avec ceux qui en ont besoin. Aidez-nous à diffuser ce cadeau en faisant un don de 1 $ ou plus, et partagez cette page / vidéo. Lors de la crise de 2015 au Burundi, Marguerite Barankitse, fondatrice et présidente de Maison Shalom a dénoncé les massacres et crimes commis contre l'humanité par son propre gouvernement. Cela a entraîné la fermeture de ses écoles, de son hôpital, de ses comptes bancaires et la fermeture de toutes les activités au Burundi. Ils ont maintenant déménagé au Rwanda depuis 2015. Aidez-nous à atteindre l'objectif de 1 million de dollars pour obtenir des fonds pour construire une école au Rwanda. Ensemble nous pouvons faire la différence!</p>
+          </div>
+      )}
+
+
+
+
 
 
         
       <div className="donate" id="donate">
+
+
+
           <h2 style={{textShadow: "1px 1px black"}} >Donate</h2>
 
           <p className="donateTxt" >If you would like your name to be displayed into our list of contributors, please enter it below.</p>
@@ -110,6 +134,10 @@ Rwanda. Together we can make a difference!</p>
               }}
               >Donate</button>
           )}
+
+
+
+
       </div>    
 
       {/* <div className="contributors" id="contributors" >
